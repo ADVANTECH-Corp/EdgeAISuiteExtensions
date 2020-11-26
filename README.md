@@ -18,8 +18,8 @@ detect the same types of objects (for example, `face-detection-adas-0001` and
 applicability at the cost of slower performance, so you can expect a "bigger"
 network to detect objects of the same type better.
 
-| Model Name                                                                                                                                                                          | Complexity (GFLOPs)  | Size (Mp)  | Face  | Person  | Vehicle  | Bike  | License plate  | Product |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |--------------------- |----------- |------ |-------- |--------- |------ |--------------- |-------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [faster-rcnn-resnet101-coco-sparse-60-0001](./faster-rcnn-resnet101-coco-sparse-60-0001/description/faster-rcnn-resnet101-coco-sparse-60-0001.md)                                   | 364.21               | 52.79      |       | X       | X        | X     |                |         |
 | [face-detection-adas-0001](./face-detection-adas-0001/description/face-detection-adas-0001.md)                                                                                      | 2.835                | 1.053      | X     |         |          |       |                |         |
 | [face-detection-retail-0004](./face-detection-retail-0004/description/face-detection-retail-0004.md)                                                                                | 1.067                | 0.588      | X     |         |          |       |                |         |
@@ -69,8 +69,8 @@ Object recognition models are used for classification, regression, and character
 recognition. Use these networks after a respective detector (for example,
 Age/Gender recognition after Face Detection).
 
-| Model Name                                                                                                                                                  | Complexity (GFLOPs)  | Size (Mp)  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [age-gender-recognition-retail-0013](./age-gender-recognition-retail-0013/description/age-gender-recognition-retail-0013.md)                                | 0.094                | 2.138      |
 | [head-pose-estimation-adas-0001](./head-pose-estimation-adas-0001/description/head-pose-estimation-adas-0001.md)                                            | 0.105                | 1.911      |
 | [license-plate-recognition-barrier-0001](./license-plate-recognition-barrier-0001/description/license-plate-recognition-barrier-0001.md)                    | 0.328                | 1.218      |
@@ -102,8 +102,8 @@ vectors that are "close" by L2 metric (Euclidean distance).
 There are multiple models that provide various trade-offs between performance
 and accuracy (expect a bigger model to perform better).
 
-| Model Name                                                                                                                        | Complexity (GFLOPs)  | Size (Mp)  | Rank-1 on Market-1501 |
-|-----------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |------------------ |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [person-reidentification-retail-0288](./person-reidentification-retail-0288/description/person-reidentification-retail-0288.md)   | 0.174                | 0.183      | 86.1%             |
 | [person-reidentification-retail-0287](./person-reidentification-retail-0287/description/person-reidentification-retail-0287.md)   | 0.564                | 0.595      | 92.9%             |
 | [person-reidentification-retail-0286](./person-reidentification-retail-0286/description/person-reidentification-retail-0286.md)   | 1.170                | 1.234      | 94.8%             |
@@ -118,8 +118,8 @@ class. These networks are much bigger than respective object detection networks,
 but they provide a better (pixel-level) localization of objects and they can
 detect areas with complex shape (for example, free space on the road).
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [road-segmentation-adas-0001](./road-segmentation-adas-0001/description/road-segmentation-adas-0001.md)                                        | 4.770                | 0.184      |
 | [semantic-segmentation-adas-0001](./semantic-segmentation-adas-0001/description/semantic-segmentation-adas-0001.md)                            | 58.572               | 6.686      |
 | [unet-camvid-onnx-0001](./unet-camvid-onnx-0001/description/unet-camvid-onnx-0001.md)                                                          | 260.1                | 31.03      |
@@ -133,8 +133,8 @@ Instance segmentation is an extension of object detection and semantic
 segmentation problems. Instead of predicting a bounding box around each object
 instance instance segmentation model outputs pixel-wise masks for all instances.
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [instance-segmentation-security-1025](./instance-segmentation-security-1025/description/instance-segmentation-security-1025.md)                | 30.146               | 26.69      |
 | [instance-segmentation-security-0050](./instance-segmentation-security-0050/description/instance-segmentation-security-0050.md)                | 46.602               | 30.448     |
 | [instance-segmentation-security-0083](./instance-segmentation-security-0083/description/instance-segmentation-security-0083.md)                | 365.626              | 143.444    |
@@ -152,8 +152,8 @@ estimation network for every detection. These methods are very accurate. The
 second finds all keypoints in a given frame, then groups them by person
 instances, thus faster than previous, because network runs once.
 
-| Model Name                                                                                                                 | Complexity (GFLOPs)  | Size (Mp)       |
-|----------------------------------------------------------------------------------------------------------------------------|--------------------- |---------------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [human-pose-estimation-0001](./human-pose-estimation-0001/description/human-pose-estimation-0001.md)                       | 15.435               | 4.099      |
 
 ## Image Processing
@@ -161,8 +161,8 @@ instances, thus faster than previous, because network runs once.
 Deep Learning models find their application in various image processing tasks to
 increase the quality of the output.
 
-| Model Name                                                                                                                                  | Complexity (GFLOPs)  | Size (Mp)  |
-|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [single-image-super-resolution-1032](./single-image-super-resolution-1032/description/single-image-super-resolution-1032.md)                | 11.654               | 0.030      |
 | [single-image-super-resolution-1033](./single-image-super-resolution-1033/description/single-image-super-resolution-1033.md)                | 16.062               | 0.030      |
 | [text-image-super-resolution-0001](./text-image-super-resolution-0001/description/text-image-super-resolution-0001.md)                      | 1.379                | 0.003      |
@@ -171,8 +171,8 @@ increase the quality of the output.
 
 Deep Learning models for text detection in various applications.
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [text-detection-0003](./text-detection-0003/description/text-detection-0003.md)                                                                | 51.256               | 6.747      |
 | [text-detection-0004](./text-detection-0004/description/text-detection-0004.md)                                                                | 23.305               | 4.328      |
 | [horizontal-text-detection-0001](./horizontal-text-detection-0001/description/horizontal-text-detection-0001.md)                               | 7.718              | 2.259     |
@@ -181,8 +181,8 @@ Deep Learning models for text detection in various applications.
 
 Deep Learning models for text recognition in various applications.
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [text-recognition-0012](./text-recognition-0012/description/text-recognition-0012.md)                                                          | 1.485                | 5.568      |
 | [handwritten-score-recognition-0003](./handwritten-score-recognition-0003/description/handwritten-score-recognition-0003.md)                   | 0.792                | 5.555      |
 | [handwritten-japanese-recognition-0001](./handwritten-japanese-recognition-0001/description/handwritten-japanese-recognition-0001.md)          | 117.136              | 15.31      |
@@ -192,8 +192,8 @@ Deep Learning models for text recognition in various applications.
 
 Deep Learning models for text spotting (simultaneous detection and recognition).
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [text-spotting-0002](./text-spotting-0002/description/text-spotting-0002.md)                                                                   |                      |            |
 | text-spotting-0002-detector                                                                                                                    | 185.169              | 26.497     |
 | text-spotting-0002-recognizer-encoder                                                                                                          | 2.082                | 1.328      |
@@ -207,8 +207,8 @@ or spatio-temporal) features (embeddings) from individual clip fragments and the
 to predict a vector with classification scores. Models that compute embeddings are called *encoder*, while models
 that predict an actual labels are called *decoder*.
 
-| Model Name                                                                                                                                              | Complexity (GFLOPs)  | Size (Mp)  |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [driver-action-recognition-adas-0002](./driver-action-recognition-adas-0002/description/driver-action-recognition-adas-0002.md)                         |                      |            |
 | driver-action-recognition-adas-0002-encoder                                                                                                             | 0.676                | 2.863      |
 | driver-action-recognition-adas-0002-decoder                                                                                                             | 0.147                | 4.205      |
@@ -222,23 +222,23 @@ that predict an actual labels are called *decoder*.
 
 Deep Learning models for image retrieval (ranking 'gallery' images according to their similarity to some 'probe' image).
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [image-retrieval-0001](./image-retrieval-0001/description/image-retrieval-0001.md)                                                          | 0.613                | 2.535      |
 
 ## Compressed models
 
 Deep Learning compressed models
 
-| Model Name                                                                                                                                     | Complexity (GFLOPs)  | Size (Mp)  |
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------- |----------- |
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [resnet50-binary-0001](./resnet50-binary-0001/description/resnet50-binary-0001.md)                                                             | 1.002                | 7.446      |
 | [resnet18-xnor-binary-onnx-0001](./resnet18-xnor-binary-onnx-0001/description/resnet18-xnor-binary-onnx-0001.md)                               | -                    | -          |
 
 ## Question Answering
 
-| Model Name| Complexity (GFLOPs)|Size (Mp)|
-|-----------|--------------------|---------|
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [bert-large-uncased-whole-word-masking-squad-fp32-0001](./bert-large-uncased-whole-word-masking-squad-fp32-0001/description/bert-large-uncased-whole-word-masking-squad-fp32-0001.md) | 246.93 | 333.96 |
 | [bert-large-uncased-whole-word-masking-squad-int8-0001](./bert-large-uncased-whole-word-masking-squad-int8-0001/description/bert-large-uncased-whole-word-masking-squad-int8-0001.md) | 246.93 | 333.96 |
 | [bert-small-uncased-whole-word-masking-squad-0001](./bert-small-uncased-whole-word-masking-squad-0001/description/bert-small-uncased-whole-word-masking-squad-0001.md) | 23.9 | 57.94 |
@@ -247,8 +247,8 @@ Deep Learning compressed models
 
 ## Machine Translation
 
-| Model Name| Complexity (GFLOPs)|Size (Mp)|
-|-----------|--------------------|---------|
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+|------ |------ |------ |------ |------ |------ |------ |------ |
 | [machine-translation-nar-en-ru-0001](./machine-translation-nar-en-ru-0001/description/machine-translation-nar-en-ru-0001.md) | 23.17 | 69.29 |
 | [machine-translation-nar-ru-en-0001](./machine-translation-nar-ru-en-0001/description/machine-translation-nar-ru-en-0001.md) | 23.17 | 69.29 |
 
