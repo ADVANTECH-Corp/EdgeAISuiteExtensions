@@ -20,10 +20,42 @@ network to detect objects of the same type better.
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [face-detection-adas-0001](./Object-detection/face-detection-adas-0001.zip ) | Face | Caffe | 1.053	 | 2.835 |V|V|V|
-| [face-detection-retail-0004](./Object-Detection/face-detection-adas-0001.md ) | Face | Caffe | 0.588	 | 1.067 |V|V|V|
-| [face-detection-retail-0005](./Object-Detection/face-detection-adas-0001.md ) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
-| [face-detection-retail-0044](./Object-Detection/face-detection-adas-0001.md ) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
+| [face-detection-adas-0001](./Object-detection/face-detection-adas-0001.zip) | Face | Caffe | 1.053	 | 2.835 |V|V|V|
+| [face-detection-retail-0004](./Object-Detection/face-detection-adas-0004.zip) | Face | Caffe | 0.588	 | 1.067 |V|V|V|
+| [face-detection-retail-0005](./Object-Detection/face-detection-adas-0005.zip) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
+| [face-detection-retail-0044](./Object-Detection/face-detection-adas-0044.zip) | Face |   |   |   |V|V|V|
+| [faster_rcnn_inception_resnet_v2_atrous_coco](./Object-Detection/faster_rcnn_inception_resnet_v2_atrous_coco.zip) | Object |TensorFlow|13.307|30.687|V|V| |
+| [faster_rcnn_inception_v2_coco](./Object-Detection/faster_rcnn_inception_v2_coco.zip) |Object| TensorFlow |13.307|30.687|V|V|V|
+| [faster_rcnn_resnet50_coco](./Object-Detection/faster_rcnn_resnet50_coco.zip)|Object|TensorFlow |29.162|57.203|V|V|V|
+| [faster_rcnn_resnet101_coco](./Object-Detection/faster_rcnn_resnet101_coco.zip)|Object|TensorFlow |48.128|112.052|V|V|V|
+| [Gaze-Estimation](./Object-Detection/Gaze-Estimation.zip)|| |||V|V|V|
+| [mobilenet-ssd](./Object-Detection/mobilenet-ssd.zip)|Object|Caffe |5.783|2.316|V|V|V|
+| [pedestrian-and-vehicle-detector-adas-0001](./Object-Detection/pedestrian-and-vehicle-detector-adas-0001.zip)|Person  Vehicle|Caffe|1.650|3.974|V|V|V|
+| [pedestrian-detection-adas-0002](./Object-Detection/pedestrian-detection-adas-0002.zip)|Person |Caffe|6.807|2.494|V|V|V|
+| [person-detection-0200](./Object-Detection/person-detection-0200.zip)|Person|PyTorch|1.817|0.786|V|V|V|
+| [person-detection-0201](./Object-Detection/person-detection-0201.zip)|Person|PyTorch|1.817|1.768|V|V|V|
+| [person-detection-0202](./Object-Detection/person-detection-0202.zip)|Person|PyTorch|1.817|3.143|V|V|V|
+| [person-detection-retail-0002](./Object-Detection/person-detection-retail-0002.zip)|Person|Caffe|3.244|12.427|V|V|V|
+| [person-detection-retail-0002_person-reidentification-retail-0031](./Object-Detection/person-detection-retail-0002_person-reidentification-retail-0031.zip)|Person| | | |V|V|V|
+| [person-detection-retail-0013](./Object-Detection/person-detection-retail-0013.zip)|Person|Caffe|0.723|2.300|V|V|V|
+| [person-detection-retail-0013_person-reidentification-retail-0031](./Object-Detection/person-detection-retail-0013_person-reidentification-retail-0031.zip)|Person| | | |V|V|V|
+| [rfcn-resnet101-coco-tf](./Object-Detection/rfcn-resnet101-coco-tf.zip)|Object |TensorFlow|171.85|53.462|V|V|V|
+| [ssd_mobilenet_v1_coco](./Object-Detection/ssd_mobilenet_v1_coco.zip)|Object|TensorFlow|6.807|2.494|V|V|V|
+| [ssd_mobilenet_v1_fpn_coco](./Object-Detection/ssd_mobilenet_v1_fpn_coco.zip)|Object|TensorFlow|36.188|123.309|V|V|V|
+| [ssd_mobilenet_v2_coco](./Object-Detection/ssd_mobilenet_v2_coco.zip)|Object|TensorFlow|16.818|3.775|V|V|V|
+| [ssd_resnet50_v1_fpn_coco](./Object-Detection/ssd_resnet50_v1_fpn_coco.zip)|Object|TensorFlow|56.9326|178.6807|V|V|V|
+| [ssd300](./Object-Detection/ssd300.zip)|Object|Caffe|26.285|62.815|V|V|V|
+| [ssd512](./Object-Detection/ssd512.zip)|Object|Caffe|27.189|180.611|V|V|V|
+| [ssdlite_mobilenet_v2](./Object-Detection/ssdlite_mobilenet_v2.zip)|Object|TensorFlow|4.475|1.525|V|V|V|
+| [vehicle-detection-0200](./Object-Detection/vehicle-detection-0200.zip)|Vehicle|PyTorch|1.817|0.786|V|V|V|
+| [vehicle-detection-0201](./Object-Detection/vehicle-detection-0201.zip)|Vehicle|PyTorch|1.817|1.768|V|V|V|
+| [vehicle-detection-0202](./Object-Detection/vehicle-detection-0202.zip)|Vehicle|PyTorch|1.817|3.143|V|V|V|
+| [vehicle-license 1](./Object-Detection/vehicle-license1.zip)|Vehicle| | | |V|V|V|
+| [vehicle-license 2](./Object-Detection/vehicle-license2.zip)|Vehicle| | | |V|V|V|
+| [vehicle-license-plate-detection-barrier-0106](./Object-Detection/vehicle-license-plate-detection-barrier-0106.zip)|Vehicle License Plate|TensorFlow|0.634|0.349|V|V|V|
+| [yolo-v3-tf](./Object-Detection/yolo-v3-tf.zip)|Object|Keras|61.922|65.984|V|V|V|
+| [yolo-v3-tiny-tf](./Object-Detection/yolo-v3-tiny-tf.zip)|Object|TensorFlow|15.858|6.988|V|V|V|
+ 
 
 ## Object Recognition Models
 
