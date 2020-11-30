@@ -56,56 +56,45 @@ network to detect objects of the same type better.
 | [yolo-v3-tf](./Object-Detection/yolo-v3-tf.zip)|Object|Keras|61.922|65.984|V|V|V|
 | [yolo-v3-tiny-tf](./Object-Detection/yolo-v3-tiny-tf.zip)|Object|TensorFlow|15.858|6.988|V|V|V|
  
-
-## Object Recognition Models
-
-Object recognition models are used for classification, regression, and character
-recognition. Use these networks after a respective detector (for example,
-Age/Gender recognition after Face Detection).
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
+## Classification Models
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [age-gender-recognition-retail-0013](./age-gender-recognition-retail-0013/description/age-gender-recognition-retail-0013.md)                                | 0.094                | 2.138      |
-| [head-pose-estimation-adas-0001](./head-pose-estimation-adas-0001/description/head-pose-estimation-adas-0001.md)                                            | 0.105                | 1.911      |
-| [license-plate-recognition-barrier-0001](./license-plate-recognition-barrier-0001/description/license-plate-recognition-barrier-0001.md)                    | 0.328                | 1.218      |
-| [vehicle-attributes-recognition-barrier-0039](./vehicle-attributes-recognition-barrier-0039/description/vehicle-attributes-recognition-barrier-0039.md)     | 0.126                | 0.626      |
-| [vehicle-attributes-recognition-barrier-0042](./vehicle-attributes-recognition-barrier-0042/description/vehicle-attributes-recognition-barrier-0042.md)     | 0.462                | 11.177     |
-| [emotions-recognition-retail-0003](./emotions-recognition-retail-0003/description/emotions-recognition-retail-0003.md)                                      | 0.126                | 2.483      |
-| [landmarks-regression-retail-0009](./landmarks-regression-retail-0009/description/landmarks-regression-retail-0009.md)                                      | 0.021                | 0.191      |
-| [facial-landmarks-35-adas-0002](./facial-landmarks-35-adas-0002/description/facial-landmarks-35-adas-0002.md)                                               | 0.042                | 4.595      |
-| [person-attributes-recognition-crossroad-0230](./person-attributes-recognition-crossroad-0230/description/person-attributes-recognition-crossroad-0230.md)  | 0.174                | 0.735      |
-| [person-attributes-recognition-crossroad-0234](./person-attributes-recognition-crossroad-0234/description/person-attributes-recognition-crossroad-0234.md)  | 2.167                | 23.510     |
-| [person-attributes-recognition-crossroad-0238](./person-attributes-recognition-crossroad-0238/description/person-attributes-recognition-crossroad-0238.md)  | 1.034                | 21.797     |
-| [gaze-estimation-adas-0002](./gaze-estimation-adas-0002/description/gaze-estimation-adas-0002.md)                                                           | 0.139                | 1.882      |
+|[alexnet](./Classification/alexnet.zip)|Classification|Caffe|60.965|1.5|V|V|V|
+|[caffenet](./Classification/caffenet.zip)|Classification|Caffe|60.965|1.463|V|V|V|
+|[densenet-121](./Classification/densenet-121.zip)|Classification|Caffe|7.971|5.724|V|V|V|
+|[densenet-121-tf](./Classification/densenet-121-tf.zip)|Classification|TensorFlow|7.971|5.289|V|V|V|
+|[densenet-161](./Classification/densenet-161.zip)|Classification|Caffe|28.666|15.561|V|V|V|
+|[densenet-161-tf](./Classification/densenet-161-tf.zip)|Classification|TensorFlow|28.666|14.128|V|V|V|
+|[densenet-169](./Classification/densenet-169.zip)|Classification|Caffe|14.139|6.788|V|V|V|
+|[densenet-169-tf](./Classification/densenet-169-tf.zip)|Classification|TensorFlow|14.139|6.16|V|V|V|
+|[efficientnet-b0](./Classification/efficientnet-b0.zip)|Classification|TensorFlow|5.268|0.189|V|V|V|
+|[efficientnet-b0_auto_aug](./Classification/efficientnet-b0_auto_aug.zip)|Classification|TensorFlow|5.268|0.819|V|V|V|
+|[efficientnet-b0-pytorch](./Classification/efficientnet-b0-pytorch.zip)|Classification|PyTorch|5.268|0.819|V|V|V|
+|[efficientnet-b5](./Classification/efficientnet-b5.zip)|Classification|TensorFlow|30.303|21.252|V|V|V|
+|[efficientnet-b5-pytorch](./Classification/efficientnet-b5-pytorch.zip)|Classification|PyTorch|30.303|21.252|V|V|V|
+|[efficientnet-b7_auto_aug](./Classification/efficientnet-b7_auto_aug.zip)|Classification|TensorFlow|66.193|77.168|V|V|V|
+|[efficientnet-b7-pytorch](./Classification/efficientnet-b7-pytorch.zip)|Classification|PyTorch|66.193|77.168|V|V|V|
+|[googlenet-v1](./Classification/googlenet-v1.zip)|Classification|Caffe|6.999|3.266|V|V|V|
+|[googlenet-v1-tf](./Classification/googlenet-v1.zip)|Classification|TensorFlow|6.619|3.016|V|V|V|
+|[googlenet-v2](./Classification/googlenet-v2.zip)|Classification|Caffe|11.185|4.058|V|V|V|
+|[googlenet-v2-tf](./Classification/googlenet-v2-tf.zip)|Classification|TensorFlow|11.185|4.058|V|V|V|
+|[googlenet-v3](./Classification/googlenet-v3.zip)|Classification|TensorFlow|23.819|11.469|V|V|V|
+|[googlenet-v3-pytorch](./Classification/googlenet-v3-pytorch.zip)|Classification|PyTorch|23.817|11.469|V|V|V|
+|[googlenet-v4-tf](./Classification/googlenet-v4-tf.zip)|Classification|TensorFlow|42.648|24.584|V|V|V|
+|[hbonet-0.5](./Classification/hbonet-0.5.zip)|Classification|PyTorch|2.5289|0.096|V|V|V|
+|[hbonet-0.25](./Classification/hbonet-0.25.zip)|Classification|PyTorch|1.9300|0.037|V|V|V|
+|[hbonet-1.0](./Classification/hbonet-1.0.zip)|Classification|PyTorch|4.5447|0.305|V|V|V|
+|[inception-resnet-v2-tf](./Classification/inception-resnet-v2-tf.zip)|Classification|TensorFlow|30.223|22.227|V|V|V|
+|[mobilenet-v2-pytorch](./Classification/mobilenet-v2-pytorch.zip)|Classification|PyTorch|3.489|0.615|V|V|V|
 
-## Reidentification Models
 
-Precise tracking of objects in a video is a common application of Computer
-Vision (for example, for people counting). It is often complicated by a set of
-events that can be described as a "relatively long absence of an object". For
-example, it can be caused by occlusion or out-of-frame movement. In such cases,
-it is better to recognize the object as "seen before" regardless of its current
-position in an image or the amount of time passed since last known position.
 
-The following networks can be used in such scenarios. They take an image of a
-person and evaluate an embedding - a vector in high-dimensional space that
-represents an appearance of this person. This vector can be used for further
-evaluation: images that correspond to the same person will have embedding
-vectors that are "close" by L2 metric (Euclidean distance).
 
-There are multiple models that provide various trade-offs between performance
-and accuracy (expect a bigger model to perform better).
 
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [person-reidentification-retail-0288](./person-reidentification-retail-0288/description/person-reidentification-retail-0288.md)   | 0.174                | 0.183      | 86.1%             |
-| [person-reidentification-retail-0287](./person-reidentification-retail-0287/description/person-reidentification-retail-0287.md)   | 0.564                | 0.595      | 92.9%             |
-| [person-reidentification-retail-0286](./person-reidentification-retail-0286/description/person-reidentification-retail-0286.md)   | 1.170                | 1.234      | 94.8%             |
-| [person-reidentification-retail-0277](./person-reidentification-retail-0277/description/person-reidentification-retail-0277.md)   | 1.993                | 2.103      | 96.2%             |
 
-## Semantic Segmentation Models
+## Segmentation Models
 
-Semantic segmentation is an extension of object detection problem. Instead of
+Segmentation is an extension of object detection problem. Instead of
 returning bounding boxes, semantic segmentation models return a "painted"
 version of the input image, where the "color" of each pixel represents a certain
 class. These networks are much bigger than respective object detection networks,
@@ -134,33 +123,7 @@ instance instance segmentation model outputs pixel-wise masks for all instances.
 | [instance-segmentation-security-0083](./instance-segmentation-security-0083/description/instance-segmentation-security-0083.md)                | 365.626              | 143.444    |
 | [instance-segmentation-security-0010](./instance-segmentation-security-0010/description/instance-segmentation-security-0010.md)                | 899.568              | 174.568    |
 
-
-## Human Pose Estimation Models
-
-Human pose estimation task is to predict a pose: body skeleton, which consists
-of keypoints and connections between them, for every person in an input image or
-video.  Keypoints are body joints, i.e. ears, eyes, nose, shoulders, knees, etc.
-There are two major groups of such metods: top-down and bottom-up.  The first
-detects persons in a given frame, crops or rescales detections, then runs pose
-estimation network for every detection. These methods are very accurate. The
-second finds all keypoints in a given frame, then groups them by person
-instances, thus faster than previous, because network runs once.
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [human-pose-estimation-0001](./human-pose-estimation-0001/description/human-pose-estimation-0001.md)                       | 15.435               | 4.099      |
-
-## Image Processing
-
-Deep Learning models find their application in various image processing tasks to
-increase the quality of the output.
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [single-image-super-resolution-1032](./single-image-super-resolution-1032/description/single-image-super-resolution-1032.md)                | 11.654               | 0.030      |
-| [single-image-super-resolution-1033](./single-image-super-resolution-1033/description/single-image-super-resolution-1033.md)                | 16.062               | 0.030      |
-| [text-image-super-resolution-0001](./text-image-super-resolution-0001/description/text-image-super-resolution-0001.md)                      | 1.379                | 0.003      |
-
+ 
 ## Text Detection
 
 Deep Learning models for text detection in various applications.
@@ -171,80 +134,9 @@ Deep Learning models for text detection in various applications.
 | [text-detection-0004](./text-detection-0004/description/text-detection-0004.md)                                                                | 23.305               | 4.328      |
 | [horizontal-text-detection-0001](./horizontal-text-detection-0001/description/horizontal-text-detection-0001.md)                               | 7.718              | 2.259     |
 
-## Text Recognition
+ 
 
-Deep Learning models for text recognition in various applications.
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [text-recognition-0012](./text-recognition-0012/description/text-recognition-0012.md)                                                          | 1.485                | 5.568      |
-| [handwritten-score-recognition-0003](./handwritten-score-recognition-0003/description/handwritten-score-recognition-0003.md)                   | 0.792                | 5.555      |
-| [handwritten-japanese-recognition-0001](./handwritten-japanese-recognition-0001/description/handwritten-japanese-recognition-0001.md)          | 117.136              | 15.31      |
-| [formula-recognition-medium-scan-0001](./formula-recognition-medium-scan-0001/description/formula-recognition-medium-scan-0001.md): <br> encoder <br> decoder | <br>16.56<br>1.86 | <br>1.69<br>2.56 |
-
-## Text Spotting
-
-Deep Learning models for text spotting (simultaneous detection and recognition).
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [text-spotting-0002](./text-spotting-0002/description/text-spotting-0002.md)                                                                   |                      |            |
-| text-spotting-0002-detector                                                                                                                    | 185.169              | 26.497     |
-| text-spotting-0002-recognizer-encoder                                                                                                          | 2.082                | 1.328      |
-| text-spotting-0002-recognizer-decoder                                                                                                          | 0.002                | 0.273      |
-
-## Action Recognition Models
-
-Action Recognition models predict action that is being performed on a short video clip
-(tensor formed by stacking sampled frames from input video). Some models (for example `driver-action-recognition-adas-0002` may use precomputed high-level spatial
-or spatio-temporal) features (embeddings) from individual clip fragments and then aggregate them in a temporal model
-to predict a vector with classification scores. Models that compute embeddings are called *encoder*, while models
-that predict an actual labels are called *decoder*.
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [driver-action-recognition-adas-0002](./driver-action-recognition-adas-0002/description/driver-action-recognition-adas-0002.md)                         |                      |            |
-| driver-action-recognition-adas-0002-encoder                                                                                                             | 0.676                | 2.863      |
-| driver-action-recognition-adas-0002-decoder                                                                                                             | 0.147                | 4.205      |
-| [action-recognition-0001](./action-recognition-0001/description/action-recognition-0001.md)                                                             |                      |            |
-|   action-recognition-0001-encoder                                                                                                                       | 7.340                | 21.276     |
-|   action-recognition-0001-decoder                                                                                                                       | 0.147                | 4.405      |
-| [asl-recognition-0004](./asl-recognition-0004/description/asl-recognition-0004.md)                                                                      | 6.660                | 4.133      |
-| [weld-porosity-detection-0001](./weld-porosity-detection-0001/description/weld-porosity-detection-0001.md)                                                                      | 3.636                | 11.173      |
-
-## Image Retrieval
-
-Deep Learning models for image retrieval (ranking 'gallery' images according to their similarity to some 'probe' image).
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [image-retrieval-0001](./image-retrieval-0001/description/image-retrieval-0001.md)                                                          | 0.613                | 2.535      |
-
-## Compressed models
-
-Deep Learning compressed models
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [resnet50-binary-0001](./resnet50-binary-0001/description/resnet50-binary-0001.md)                                                             | 1.002                | 7.446      |
-| [resnet18-xnor-binary-onnx-0001](./resnet18-xnor-binary-onnx-0001/description/resnet18-xnor-binary-onnx-0001.md)                               | -                    | -          |
-
-## Question Answering
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [bert-large-uncased-whole-word-masking-squad-fp32-0001](./bert-large-uncased-whole-word-masking-squad-fp32-0001/description/bert-large-uncased-whole-word-masking-squad-fp32-0001.md) | 246.93 | 333.96 |
-| [bert-large-uncased-whole-word-masking-squad-int8-0001](./bert-large-uncased-whole-word-masking-squad-int8-0001/description/bert-large-uncased-whole-word-masking-squad-int8-0001.md) | 246.93 | 333.96 |
-| [bert-small-uncased-whole-word-masking-squad-0001](./bert-small-uncased-whole-word-masking-squad-0001/description/bert-small-uncased-whole-word-masking-squad-0001.md) | 23.9 | 57.94 |
-| [bert-small-uncased-whole-word-masking-squad-0002](./bert-small-uncased-whole-word-masking-squad-0002/description/bert-small-uncased-whole-word-masking-squad-0002.md) | 23.9 | 41.1 |
-| [bert-large-uncased-whole-word-masking-squad-emb-0001](./bert-large-uncased-whole-word-masking-squad-emb-0001/description/bert-large-uncased-whole-word-masking-squad-emb-0001.md) | 246.93 (for [1,384] input size) | 333.96 |
-
-## Machine Translation
-
-| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
-|------ |------ |------ |------ |------ |------ |------ |------ |
-| [machine-translation-nar-en-ru-0001](./machine-translation-nar-en-ru-0001/description/machine-translation-nar-en-ru-0001.md) | 23.17 | 69.29 |
-| [machine-translation-nar-ru-en-0001](./machine-translation-nar-ru-en-0001/description/machine-translation-nar-ru-en-0001.md) | 23.17 | 69.29 |
+ 
 
 
 ## Legal Information
