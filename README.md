@@ -20,10 +20,10 @@ network to detect objects of the same type better.
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [face-detection-adas-0001](./Object-Detection/face-detection-adas-0001.md ) | Face detector for driver monitoring and similar scenarios. The network features a default MobileNet backbone that includes depth-wise convolutions to reduce the amount of computation for the 3x3 convolution block. | Caffe | 1.053	 | 2.835 |X|X|X|
-| [face-detection-retail-0004](./Object-Detection/face-detection-adas-0001.md ) | Face detector based on SqueezeNet light (half-channels) as a backbone with a single SSD for indoor/outdoor scenes shot by a front-facing camera. The backbone consists of fire modules to reduce the number of computations. The single SSD head from 1/16 scale feature map has nine clustered prior boxes. | Caffe | 0.588	 | 1.067 |X|X|X|
-| [face-detection-retail-0005](./Object-Detection/face-detection-adas-0001.md ) | Face detector based on MobileNetV2 as a backbone with a single SSD head for indoor/outdoor scenes shot by a front-facing camera. The single SSD head from 1/16 scale feature map has nine clustered prior boxes. | PyTorch | 1.021 | 0.982 |X|X|X|
-| [face-detection-retail-0044](./Object-Detection/face-detection-adas-0001.md ) | Face detector based on MobileNetV2 as a backbone with a single SSD head for indoor/outdoor scenes shot by a front-facing camera. The single SSD head from 1/16 scale feature map has nine clustered prior boxes. | PyTorch | 1.021 | 0.982 |X|X|X|
+| [face-detection-adas-0001](./Object-detection/face-detection-adas-0001.zip ) | Face | Caffe | 1.053	 | 2.835 |V|V|V|
+| [face-detection-retail-0004](./Object-Detection/face-detection-adas-0001.md ) | Face | Caffe | 0.588	 | 1.067 |V|V|V|
+| [face-detection-retail-0005](./Object-Detection/face-detection-adas-0001.md ) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
+| [face-detection-retail-0044](./Object-Detection/face-detection-adas-0001.md ) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
 
 ## Object Recognition Models
 
