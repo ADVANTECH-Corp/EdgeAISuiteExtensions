@@ -124,12 +124,16 @@ detect areas with complex shape (for example, free space on the road).
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [road-segmentation-adas-0001](./road-segmentation-adas-0001/description/road-segmentation-adas-0001.md)                                        | 4.770                | 0.184      |
-| [semantic-segmentation-adas-0001](./semantic-segmentation-adas-0001/description/semantic-segmentation-adas-0001.md)                            | 58.572               | 6.686      |
-| [unet-camvid-onnx-0001](./unet-camvid-onnx-0001/description/unet-camvid-onnx-0001.md)                                                          | 260.1                | 31.03      |
-| [icnet-camvid-ava-0001](./icnet-camvid-ava-0001/description/icnet-camvid-ava-0001.md)                                                   | 151.82                | 25.45       |
-| [icnet-camvid-ava-sparse-30-0001](./icnet-camvid-ava-sparse-30-0001/description/icnet-camvid-ava-sparse-30-0001.md)                     | 151.82                | 25.45       |
-| [icnet-camvid-ava-sparse-60-0001](./icnet-camvid-ava-sparse-60-0001/description/icnet-camvid-ava-sparse-60-0001.md)                     | 151.82                | 25.45       |
+|[deeplabv3](./Segmentation/deeplabv3.zip)|Segmentation|TensorFlow|23.819|11.469|V|V||
+|[icnet-camvid-ava-0001](./Segmentation/icnet-camvid-ava-0001.zip)|Segmentation|TensorFlow|25.45|151.82|V|V||
+|[icnet-camvid-ava-sparse-30-0001](./Segmentation/icnet-camvid-ava-sparse-30-0001.zip)|Segmentation|TensorFlow|25.45|151.82|V|V||
+|[icnet-camvid-ava-sparse-60-0001](./Segmentation/icnet-camvid-ava-sparse-60-0001.zip)|Segmentation|TensorFlow|25.45|151.82|V|V||
+|[midasnet](./Segmentation/midasnet.zip)|Segmentation|PyTorch|104.0814|207.4915|V|V|V|
+|[road-segmentation-adas-0001](./Segmentation/road-segmentation-adas-0001.zip)|Segmentation|PyTorch|0.184|4.770|V|V|V|
+|[semantic-segmentation-adas-0001](./Segmentation/semantic-segmentation-adas-0001.zip)|Segmentation|Caffe|6.686|58.572|V|V||
+|[unet-camvid-onnx-0001](./Segmentation/unet-camvid-onnx-0001.zip)|Segmentation|PyTorch|31.03|260.1|V|V|V|
+
+ 
 
 ## Instance Segmentation Models
 
@@ -139,10 +143,11 @@ instance instance segmentation model outputs pixel-wise masks for all instances.
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [instance-segmentation-security-1025](./instance-segmentation-security-1025/description/instance-segmentation-security-1025.md)                | 30.146               | 26.69      |
-| [instance-segmentation-security-0050](./instance-segmentation-security-0050/description/instance-segmentation-security-0050.md)                | 46.602               | 30.448     |
-| [instance-segmentation-security-0083](./instance-segmentation-security-0083/description/instance-segmentation-security-0083.md)                | 365.626              | 143.444    |
-| [instance-segmentation-security-0010](./instance-segmentation-security-0010/description/instance-segmentation-security-0010.md)                | 899.568              | 174.568    |
+|[mask_rcnn_inception_resnet_v2_atrous_coco](./Instance-segmentation/mask_rcnn_inception_resnet_v2_atrous_coco.zip)|Segmentation|TensorFlow|92.368|675.314|V|V||
+|[mask_rcnn_resnet101_atrous_coco](./Instance-segmentation/mask_rcnn_resnet101_atrous_coco.zip)|Segmentation|TensorFlow|69.188|674.58|V|V||
+|[mask_rcnn_inception_v2_coco](./Instance-segmentation/mask_rcnn_inception_v2_coco.zip)|Segmentation|TensorFlow|21.772|54.926|V|V|V|
+|[mask_rcnn_resnet50_atrous_coco](./Instance-segmentation/mask_rcnn_resnet50_atrous_coco.zip)|Segmentation|TensorFlow|50.222|294.738|V|V|V|
+
 
  
 ## Text Detection
@@ -151,10 +156,10 @@ Deep Learning models for text detection in various applications.
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [text-detection-0003](./text-detection-0003/description/text-detection-0003.md)                                                                | 51.256               | 6.747      |
-| [text-detection-0004](./text-detection-0004/description/text-detection-0004.md)                                                                | 23.305               | 4.328      |
-| [horizontal-text-detection-0001](./horizontal-text-detection-0001/description/horizontal-text-detection-0001.md)                               | 7.718              | 2.259     |
-
+|[mhorizontal-text-detection-0001](./Text-detection/horizontal-text-detection-0001.zip)|Text|PyTorch|2.26|7.78|V|V||
+|[text-detection1](./Text-detection/text-detection1.zip)|Text| | | |V|V|V|
+|[text-detection-0003](./Text-detection/text-detection-0003.zip)|Text|TensorFlow|6.747|51.256|V|V|V|
+|[text-detection-0004](./Text-detection/text-detection-0004.zip)|Text|TensorFlow|4.328|23.305|V|V|V|
  
 
  
