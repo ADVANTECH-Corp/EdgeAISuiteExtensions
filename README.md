@@ -86,10 +86,31 @@ network to detect objects of the same type better.
 |[hbonet-1.0](./Classification/hbonet-1.0.zip)|Classification|PyTorch|4.5447|0.305|V|V|V|
 |[inception-resnet-v2-tf](./Classification/inception-resnet-v2-tf.zip)|Classification|TensorFlow|30.223|22.227|V|V|V|
 |[mobilenet-v2-pytorch](./Classification/mobilenet-v2-pytorch.zip)|Classification|PyTorch|3.489|0.615|V|V|V|
+|[octave-densenet-121-0.125](./Classification/octave-densenet-121-0.125.zip)|Classification|MXNet|7.977|4.883|V|V|V|
+|[octave-resnet-26-0.25](./Classification/octave-resnet-26-0.25.zip)|Classification|MXNet|15.99|3.768|V|V|V|
+|[octave-resnet-50-0.125](./Classification/octave-resnet-50-0.125.zip)|Classification|MXNet|25.551|7.221|V|V|V|
+|[octave-resnet-101-0.125](./Classification/octave-resnet-101-0.125.zip)|Classification|MXNet|44.543|13.387|V|V|V|
+|[octave-resnet-200-0.125](./Classification/octave-resnet-200-0.125.zip)|Classification|MXNet|64.667|25.407|V|V|V|
+|[octave-resnext-50-0.25](./Classification/octave-resnext-50-0.25.zip)|Classification|MXNet|25.02|6.444|V|V|V|
+|[octave-resnext-101-0.25](./Classification/octave-resnext-101-0.25.zip)|Classification|MXNet|44.169|11.521|V|V|V|
+|[octave-se-resnet-50-0.125](./Classification/octave-se-resnet-50-0.125.zip)|Classification|MXNet|28.082|7.246|V|V|V|
+|[resnest-50-pytorch](./Classification/resnest-50-pytorch.zip)|Classification|PyTorch|27.4493|10.8148|V|V|V|
+|[resnet-18-pytorch](./Classification/resnet-18-pytorch.zip)|Classification|PyTorch|11.68|3.637|V|V|V|
+|[resnet-34-pytorch](./Classification/resnet-34-pytorch.zip)|Classification|PyTorch|21.7892|7.3409|V|V|V|
+|[resnet-50-pytorch](./Classification/resnet-50-pytorch.zip)|Classification|PyTorch|25.53|8.216|V|V|V|
+|[resnet-50-tf](./Classification/resnet-50-tf.zip)|Classification|TensorFlow|25.53|8.2164|V|V|V|
+|[se-inception](./Classification/se-inception.zip)|Classification|TensorFlow|11.922|4.091|V|V|V|
+|[se-resnet-50](./Classification/se-resnet-50.zip)|Classification|Caffe|28.061|7.775|V|V|V|
+|[se-resnet-101](./Classification/se-resnet-101.zip)|Classification|Caffe|49.274|15.239|V|V|V|
+|[se-resnet-152](./Classification/se-resnet-152.zip)|Classification|Caffe|66.746|22.709|V|V|V|
+|[se-resnext-50](./Classification/se-resnext-50.zip)|Classification|Caffe|27.526|8.533|V|V|V|
+|[se-resnext-101](./Classification/se-resnext-101.zip)|Classification|Caffe|48.886|16.054|V|V|V|
+|[squeezenet1.0](./Classification/squeezenet1.0.zip)|Classification|Caffe|1.248|1.737|V|V|V|
+|[squeezenet1.1](./Classification/squeezenet1.1.zip)|Classification|Caffe|1.236|0.785|V|V|V|
+|[vgg16](./Classification/vgg16.zip)|Classification|Caffe|138.358|30.974|V|V|V|
+|[vgg19](./Classification/vgg19.zip)|Classification|Caffe|39.3|143.667|V|V|V|
 
-
-
-
+ 
 
 
 ## Segmentation Models
