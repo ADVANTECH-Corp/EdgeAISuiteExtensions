@@ -1,2 +1,4 @@
 Object-detection/faster_rcnn_inception_resnet_v2_atrous_coco.zip filter=lfs diff=lfs merge=lfs -text
 Object-detection/yolo-v3-tf.zip filter=lfs diff=lfs merge=lfs -text
+Segmentation/midasnet.zip filter=lfs diff=lfs merge=lfs -text
+Instance-segmentation/mask_rcnn_inception_resnet_v2_atrous_coco.zip filter=lfs diff=lfs merge=lfs -text
