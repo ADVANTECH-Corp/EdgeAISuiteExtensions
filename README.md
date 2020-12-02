@@ -21,9 +21,9 @@ network to detect objects of the same type better.
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
 | [face-detection-adas-0001](./Object-detection/face-detection-adas-0001.zip) | Face | Caffe | 1.053	 | 2.835 |V|V|V|
-| [face-detection-retail-0004](./Object-detection/face-detection-adas-0004.zip) | Face | Caffe | 0.588	 | 1.067 |V|V|V|
-| [face-detection-retail-0005](./Object-detection/face-detection-adas-0005.zip) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
-| [face-detection-retail-0044](./Object-detection/face-detection-adas-0044.zip) | Face |   |   |   |V|V|V|
+| [face-detection-retail-0004](./Object-detection/face-detection-retail-0004.zip) | Face | Caffe | 0.588	 | 1.067 |V|V|V|
+| [face-detection-retail-0005](./Object-detection/face-detection-retail-0005.zip) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
+| [face-detection-retail-0044](./Object-detection/face-detection-retail-0044.zip) | Face |   |   |   |V|V|V|
 | [faster_rcnn_inception_resnet_v2_atrous_coco](./Object-detection/faster_rcnn_inception_resnet_v2_atrous_coco.zip) | Object |TensorFlow|13.307|30.687|V|V| |
 | [faster_rcnn_inception_v2_coco](./Object-detection/faster_rcnn_inception_v2_coco.zip) |Object| TensorFlow |13.307|30.687|V|V|V|
 | [faster_rcnn_resnet50_coco](./Object-detection/faster_rcnn_resnet50_coco.zip)|Object|TensorFlow |29.162|57.203|V|V|V|
