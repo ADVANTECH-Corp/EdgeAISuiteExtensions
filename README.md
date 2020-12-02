@@ -75,7 +75,7 @@ network to detect objects of the same type better.
 |[efficientnet-b7_auto_aug](./Classification/efficientnet-b7_auto_aug.zip)|Classification|TensorFlow|66.193|77.168|V|V|V|
 |[efficientnet-b7-pytorch](./Classification/efficientnet-b7-pytorch.zip)|Classification|PyTorch|66.193|77.168|V|V|V|
 |[googlenet-v1](./Classification/googlenet-v1.zip)|Classification|Caffe|6.999|3.266|V|V|V|
-|[googlenet-v1-tf](./Classification/googlenet-v1.zip)|Classification|TensorFlow|6.619|3.016|V|V|V|
+|[googlenet-v1-tf](./Classification/googlenet-v1-tf.zip)|Classification|TensorFlow|6.619|3.016|V|V|V|
 |[googlenet-v2](./Classification/googlenet-v2.zip)|Classification|Caffe|11.185|4.058|V|V|V|
 |[googlenet-v2-tf](./Classification/googlenet-v2-tf.zip)|Classification|TensorFlow|11.185|4.058|V|V|V|
 |[googlenet-v3](./Classification/googlenet-v3.zip)|Classification|TensorFlow|23.819|11.469|V|V|V|
