@@ -1,6 +1,12 @@
-## How the Extensions Work
+/ # Overview of OpenVINO&trade; Toolkit Intel's Pre-Trained Models
 
-Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully.
+OpenVINO&trade; toolkit provides a set of pre-trained models
+that you can use for learning and demo purposes or for developing deep learning
+software. Most recent version is available in the [repo on Github](https://github.com/opencv/open_model_zoo).
+
+The models can be downloaded via Model Downloader
+(`<OPENVINO_INSTALL_DIR>/deployment_tools/open_model_zoo/tools/downloader`).
+They can also be downloaded manually from [01.org](https://download.01.org/opencv).
 
 ## Object Detection Models
 
