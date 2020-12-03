@@ -1,22 +1,14 @@
-/ # Overview of OpenVINO&trade; Toolkit Intel's Pre-Trained Models
+ 
+## How the Extensions Work
 
-OpenVINO&trade; toolkit provides a set of pre-trained models
-that you can use for learning and demo purposes or for developing deep learning
-software. Most recent version is available in the [repo on Github](https://github.com/opencv/open_model_zoo).
 
-The models can be downloaded via Model Downloader
-(`<OPENVINO_INSTALL_DIR>/deployment_tools/open_model_zoo/tools/downloader`).
-They can also be downloaded manually from [01.org](https://download.01.org/opencv).
+Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully.
+
 
 ## Object Detection Models
 
-Several detection models can be used to detect a set of the most popular
-objects - for example, faces, people, vehicles. Most of the networks are
-SSD-based and provide reasonable accuracy/performance trade-offs. Networks that
-detect the same types of objects (for example, `face-detection-adas-0001` and
-`face-detection-retail-0004`) provide a choice for higher accuracy/wider
-applicability at the cost of slower performance, so you can expect a "bigger"
-network to detect objects of the same type better.
+Several detection models can be used to detect a set of the most popular objects - for example, faces, people, vehicles. Most of the networks are SSD-based and provide reasonable accuracy/performance trade-offs. Networks that detect the same types of objects (for example, face-detection-adas-0001 and face-detection-retail-0004) provide a choice for higher accuracy/wider applicability at the cost of slower performance, so you can expect a "bigger" network to detect objects of the same type better. In addition, some specific recognition networks/models have also been integrated into inference pipeline after a respective detector (for example, Age/Gender recognition after Face Detection).
+
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
@@ -57,6 +49,9 @@ network to detect objects of the same type better.
 | [yolo-v3-tiny-tf](./Object-detection/yolo-v3-tiny-tf.zip)|Object|TensorFlow|15.858|6.988|V|V|V|
  
 ## Classification Models
+
+It is a systematic grouping of observations into categories, such as when biologists categorize plants, animals, and other lifeforms into different taxonomies.
+
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
 |[alexnet](./Classification/alexnet.zip)|Classification|Caffe|60.965|1.5|V|V|V|
@@ -109,11 +104,11 @@ network to detect objects of the same type better.
 |[squeezenet1.1](./Classification/squeezenet1.1.zip)|Classification|Caffe|1.236|0.785|V|V|V|
 |[vgg16](./Classification/vgg16.zip)|Classification|Caffe|138.358|30.974|V|V|V|
 |[vgg19](./Classification/vgg19.zip)|Classification|Caffe|39.3|143.667|V|V|V|
-
  
 
-
 ## Segmentation Models
+
+Semantic segmentation is an extension of object detection problem. Instead of returning bounding boxes, semantic segmentation models return a "painted" version of the input image, where the "color" of each pixel represents a certain class. These networks are much bigger than respective object detection networks, but they provide a better (pixel-level) localization of objects and they can detect areas with complex shape.
 
 Segmentation is an extension of object detection problem. Instead of
 returning bounding boxes, semantic segmentation models return a "painted"
@@ -134,12 +129,9 @@ detect areas with complex shape (for example, free space on the road).
 |[unet-camvid-onnx-0001](./Segmentation/unet-camvid-onnx-0001.zip)|Segmentation|PyTorch|31.03|260.1|V|V|V|
 
  
-
 ## Instance Segmentation Models
 
-Instance segmentation is an extension of object detection and semantic
-segmentation problems. Instead of predicting a bounding box around each object
-instance instance segmentation model outputs pixel-wise masks for all instances.
+Instance segmentation is an extension of object detection and semantic segmentation problems. Instead of predicting a bounding box around each object instance, instance segmentation model outputs pixel-wise masks for all instances.
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
@@ -152,18 +144,23 @@ instance instance segmentation model outputs pixel-wise masks for all instances.
  
 ## Text Detection
 
-Deep Learning models for text detection in various applications.
+Various applications for text detection can run with additional deep Learning models.
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
-|[mhorizontal-text-detection-0001](./Text-detection/horizontal-text-detection-0001.zip)|Text|PyTorch|2.26|7.78|V|V||
+|[horizontal-text-detection-0001](./Text-detection/horizontal-text-detection-0001.zip)|Text|PyTorch|2.26|7.78|V|V||
 |[text-detection1](./Text-detection/text-detection1.zip)|Text| | | |V|V|V|
 |[text-detection-0003](./Text-detection/text-detection-0003.zip)|Text|TensorFlow|6.747|51.256|V|V|V|
 |[text-detection-0004](./Text-detection/text-detection-0004.zip)|Text|TensorFlow|4.328|23.305|V|V|V|
  
 
- 
+## Reference Links
+
+- [https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/index.md](https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/index.md) 
+- [https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/index.md](https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/index.md) 
+- [https://github.com/openvinotoolkit/open_model_zoo/blob/master/demos/README.md#demos-that-support-pre-trained-models](https://github.com/openvinotoolkit/open_model_zoo/blob/master/demos/README.md#demos-that-support-pre-trained-models)  
 
 
 ## Legal Information
-[*] Other names and brands may be claimed as the property of others.
+ 
+These provisions are licensed under [Apache License Version 2.0](https://github.com/openvinotoolkit/openvino/blob/master/LICENSE). By contributing to the project, you agree to the license and copyright terms therein and release your contribution under these terms.
