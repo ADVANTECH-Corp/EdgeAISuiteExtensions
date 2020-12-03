@@ -1,4 +1,4 @@
- 
+   
 ## How the Extensions Work
 
 
@@ -15,12 +15,12 @@ Several detection models can be used to detect a set of the most popular objects
 | [face-detection-adas-0001](./Object-detection/face-detection-adas-0001.zip) | Face | Caffe | 1.053	 | 2.835 |V|V|V|
 | [face-detection-retail-0004](./Object-detection/face-detection-retail-0004.zip) | Face | Caffe | 0.588	 | 1.067 |V|V|V|
 | [face-detection-retail-0005](./Object-detection/face-detection-retail-0005.zip) | Face | PyTorch | 1.021 | 0.982 |V|V|V|
-| [face-detection-retail-0044](./Object-detection/face-detection-retail-0044.zip) | Face |   |   |   |V|V|V|
+| [face-detection-retail-0044](./Object-detection/face-detection-retail-0044.zip) | Face |Caffe|2.438|  1.067|V|V|V|
 | [faster_rcnn_inception_resnet_v2_atrous_coco](./Object-detection/faster_rcnn_inception_resnet_v2_atrous_coco.zip) | Object |TensorFlow|13.307|30.687|V|V| |
 | [faster_rcnn_inception_v2_coco](./Object-detection/faster_rcnn_inception_v2_coco.zip) |Object| TensorFlow |13.307|30.687|V|V|V|
 | [faster_rcnn_resnet50_coco](./Object-detection/faster_rcnn_resnet50_coco.zip)|Object|TensorFlow |29.162|57.203|V|V|V|
 | [faster_rcnn_resnet101_coco](./Object-detection/faster_rcnn_resnet101_coco.zip)|Object|TensorFlow |48.128|112.052|V|V|V|
-| [Gaze-Estimation](./Object-detection/Gaze-Estimation.zip)|| |||V|V|V|
+| [Gaze-Estimation](./Object-detection/Gaze-Estimation.zip)|Gaze direction vector|Caffe2|7.601|0.139|V|V|V|
 | [mobilenet-ssd](./Object-detection/mobilenet-ssd.zip)|Object|Caffe |5.783|2.316|V|V|V|
 | [pedestrian-and-vehicle-detector-adas-0001](./Object-detection/pedestrian-and-vehicle-detector-adas-0001.zip)|Person  Vehicle|Caffe|1.650|3.974|V|V|V|
 | [pedestrian-detection-adas-0002](./Object-detection/pedestrian-detection-adas-0002.zip)|Person |Caffe|6.807|2.494|V|V|V|
@@ -28,9 +28,9 @@ Several detection models can be used to detect a set of the most popular objects
 | [person-detection-0201](./Object-detection/person-detection-0201.zip)|Person|PyTorch|1.817|1.768|V|V|V|
 | [person-detection-0202](./Object-detection/person-detection-0202.zip)|Person|PyTorch|1.817|3.143|V|V|V|
 | [person-detection-retail-0002](./Object-detection/person-detection-retail-0002.zip)|Person|Caffe|3.244|12.427|V|V|V|
-| [person-detection-retail-0002_person-reidentification-retail-0031](./Object-detection/person-detection-retail-0002_person-reidentification-retail-0031.zip)|Person| | | |V|V|V|
+| [person-detection-retail-0002_person-reidentification-retail-0031](./Object-detection/person-detection-retail-0002_person-reidentification-retail-0031.zip)|Descriptors of persons for tracking|Caffe|0.888|0.028|V|V|V|
 | [person-detection-retail-0013](./Object-detection/person-detection-retail-0013.zip)|Person|Caffe|0.723|2.300|V|V|V|
-| [person-detection-retail-0013_person-reidentification-retail-0031](./Object-detection/person-detection-retail-0013_person-reidentification-retail-0031.zip)|Person| | | |V|V|V|
+| [person-detection-retail-0013_person-reidentification-retail-0031](./Object-detection/person-detection-retail-0013_person-reidentification-retail-0031.zip)|Descriptors of persons for tracking|Caffe|0.888|0.028|V|V|V|
 | [rfcn-resnet101-coco-tf](./Object-detection/rfcn-resnet101-coco-tf.zip)|Object |TensorFlow|171.85|53.462|V|V|V|
 | [ssd_mobilenet_v1_coco](./Object-detection/ssd_mobilenet_v1_coco.zip)|Object|TensorFlow|6.807|2.494|V|V|V|
 | [ssd_mobilenet_v1_fpn_coco](./Object-detection/ssd_mobilenet_v1_fpn_coco.zip)|Object|TensorFlow|36.188|123.309|V|V|V|
@@ -42,8 +42,8 @@ Several detection models can be used to detect a set of the most popular objects
 | [vehicle-detection-0200](./Object-detection/vehicle-detection-0200.zip)|Vehicle|PyTorch|1.817|0.786|V|V|V|
 | [vehicle-detection-0201](./Object-detection/vehicle-detection-0201.zip)|Vehicle|PyTorch|1.817|1.768|V|V|V|
 | [vehicle-detection-0202](./Object-detection/vehicle-detection-0202.zip)|Vehicle|PyTorch|1.817|3.143|V|V|V|
-| [vehicle-license 1](./Object-detection/vehicle-license1.zip)|Vehicle| | | |V|V|V|
-| [vehicle-license 2](./Object-detection/vehicle-license2.zip)|Vehicle| | | |V|V|V|
+| [vehicle-license 1](./Object-detection/vehicle-license1.zip)|License plate|Caffe|1.354|0.126|V|V|V|
+| [vehicle-license 2](./Object-detection/vehicle-license2.zip)|License plate|PyTorch|22.423|0.462|V|V|V|
 | [vehicle-license-plate-detection-barrier-0106](./Object-detection/vehicle-license-plate-detection-barrier-0106.zip)|Vehicle License Plate|TensorFlow|0.634|0.349|V|V|V|
 | [yolo-v3-tf](./Object-detection/yolo-v3-tf.zip)|Object|Keras|61.922|65.984|V|V|V|
 | [yolo-v3-tiny-tf](./Object-detection/yolo-v3-tiny-tf.zip)|Object|TensorFlow|15.858|6.988|V|V|V|
@@ -149,7 +149,7 @@ Various applications for text detection can run with additional deep Learning mo
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
 |[horizontal-text-detection-0001](./Text-detection/horizontal-text-detection-0001.zip)|Text|PyTorch|2.26|7.78|V|V||
-|[text-detection1](./Text-detection/text-detection1.zip)|Text| | | |V|V|V|
+|[text-detection1](./Text-detection/text-detection1.zip)|Text content|TensorFlow|23.836|1.485|V|V|V|
 |[text-detection-0003](./Text-detection/text-detection-0003.zip)|Text|TensorFlow|6.747|51.256|V|V|V|
 |[text-detection-0004](./Text-detection/text-detection-0004.zip)|Text|TensorFlow|4.328|23.305|V|V|V|
  
