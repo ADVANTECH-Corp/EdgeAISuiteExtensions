@@ -1,11 +1,11 @@
    
 ## How the Extensions Work
 
+Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully. More precisely, all samples need to run the environment installed with Edge AI Suite V1.2.2 based on OpenVINO 2021.1.
+ 
 
-Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully.
 
-
-## Object Detection Models
+## Object Detection Inferences
 
 Several detection models can be used to detect a set of the most popular objects - for example, faces, people, vehicles. Most of the networks are SSD-based and provide reasonable accuracy/performance trade-offs. Networks that detect the same types of objects (for example, face-detection-adas-0001 and face-detection-retail-0004) provide a choice for higher accuracy/wider applicability at the cost of slower performance, so you can expect a "bigger" network to detect objects of the same type better. In addition, some specific recognition networks/models have also been integrated into inference pipeline after a respective detector (for example, Age/Gender recognition after Face Detection).
 
@@ -48,7 +48,7 @@ Several detection models can be used to detect a set of the most popular objects
 | [yolo-v3-tf](./Object-detection/yolo-v3-tf.zip)|Object|Keras|61.922|65.984|V|V|V|
 | [yolo-v3-tiny-tf](./Object-detection/yolo-v3-tiny-tf.zip)|Object|TensorFlow|15.858|6.988|V|V|V|
  
-## Classification Models
+## Classification Inferences
 
 It is a systematic grouping of observations into categories, such as when biologists categorize plants, animals, and other lifeforms into different taxonomies.
 
@@ -106,7 +106,7 @@ It is a systematic grouping of observations into categories, such as when biolog
 |[vgg19](./Classification/vgg19.zip)|Classification|Caffe|39.3|143.667|V|V|V|
  
 
-## Segmentation Models
+## Segmentation Inferences
 
 Semantic segmentation is an extension of object detection problem. Instead of returning bounding boxes, semantic segmentation models return a "painted" version of the input image, where the "color" of each pixel represents a certain class. These networks are much bigger than respective object detection networks, but they provide a better (pixel-level) localization of objects and they can detect areas with complex shape.
 
@@ -129,7 +129,7 @@ detect areas with complex shape (for example, free space on the road).
 |[unet-camvid-onnx-0001](./Segmentation/unet-camvid-onnx-0001.zip)|Segmentation|PyTorch|31.03|260.1|V|V|V|
 
  
-## Instance Segmentation Models
+## Instance Segmentation Inferences
 
 Instance segmentation is an extension of object detection and semantic segmentation problems. Instead of predicting a bounding box around each object instance, instance segmentation model outputs pixel-wise masks for all instances.
 
@@ -142,7 +142,7 @@ Instance segmentation is an extension of object detection and semantic segmentat
 
 
  
-## Text Detection
+## Text Detection Inferences
 
 Various applications for text detection can run with additional deep Learning models.
 
