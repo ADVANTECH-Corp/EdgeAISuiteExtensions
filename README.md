@@ -157,7 +157,7 @@ Various applications for text detection can run with additional deep Learning mo
 ## INTEL OpenVINO™ Inference Engine
 | Item | Version | Reference |
 |------ |------ |------ |
-|Inference_lib|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html](https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html)|
+|[Inference_lib](https://edgeaisuite.blob.core.windows.net/openvino2021-1/mo-lib/python_386.zip)|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html](https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html)|
 
 ## Reference Links
 
