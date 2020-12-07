@@ -135,10 +135,10 @@ Instance segmentation is an extension of object detection and semantic segmentat
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
-|[mask_rcnn_inception_resnet_v2_atrous_coco](./Instance-segmentation/mask_rcnn_inception_resnet_v2_atrous_coco.zip)|Segmentation|TensorFlow|92.368|675.314|V|V||
-|[mask_rcnn_resnet101_atrous_coco](./Instance-segmentation/mask_rcnn_resnet101_atrous_coco.zip)|Segmentation|TensorFlow|69.188|674.58|V|V||
-|[mask_rcnn_inception_v2_coco](./Instance-segmentation/mask_rcnn_inception_v2_coco.zip)|Segmentation|TensorFlow|21.772|54.926|V|V|V|
-|[mask_rcnn_resnet50_atrous_coco](./Instance-segmentation/mask_rcnn_resnet50_atrous_coco.zip)|Segmentation|TensorFlow|50.222|294.738|V|V|V|
+|[mask_rcnn_inception_resnet_v2_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_inception_resnet_v2_atrous_coco.zip)|Segmentation|TensorFlow|92.368|675.314|V|V||
+|[mask_rcnn_resnet101_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_resnet101_atrous_coco.zip)|Segmentation|TensorFlow|69.188|674.58|V|V||
+|[mask_rcnn_inception_v2_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_inception_v2_coco.zip)|Segmentation|TensorFlow|21.772|54.926|V|V|V|
+|[mask_rcnn_resnet50_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_resnet50_atrous_coco.zip)|Segmentation|TensorFlow|50.222|294.738|V|V|V|
 
 
  
