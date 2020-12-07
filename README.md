@@ -148,11 +148,16 @@ Various applications for text detection can run with additional deep Learning mo
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support | 
 |------ |------ |------ |------ |------ |------ |------ |------ |
-|[horizontal-text-detection-0001](./Text-detection/horizontal-text-detection-0001.zip)|Text|PyTorch|2.26|7.78|V|V||
-|[text-detection1](./Text-detection/text-detection1.zip)|Text content|TensorFlow|23.836|1.485|V|V|V|
-|[text-detection-0003](./Text-detection/text-detection-0003.zip)|Text|TensorFlow|6.747|51.256|V|V|V|
-|[text-detection-0004](./Text-detection/text-detection-0004.zip)|Text|TensorFlow|4.328|23.305|V|V|V|
+|[horizontal-text-detection-0001](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Text-detection/horizontal-text-detection-0001.zip)|Text|PyTorch|2.26|7.78|V|V||
+|[text-detection1](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Text-detection/text-detection1.zip)|Text content|TensorFlow|23.836|1.485|V|V|V|
+|[text-detection-0003](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Text-detection/text-detection-0003.zip)|Text|TensorFlow|6.747|51.256|V|V|V|
+|[text-detection-0004](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Text-detection/text-detection-0004.zip)|Text|TensorFlow|4.328|23.305|V|V|V|
  
+ 
+## INTEL OpenVINO™ Inference Engine
+| Item | Version | Reference |
+|------ |------ |------ |
+|Inference_lib|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html](https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html)|
 
 ## Reference Links
 
