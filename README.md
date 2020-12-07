@@ -1,10 +1,25 @@
-   
+    
 ## How the Extensions Work
 
 Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully. More precisely, all samples need to run the environment installed with Edge AI Suite V1.2.2 based on OpenVINO 2021.1.
  
+## How to Leverage Downloaded Inferences
+Each downloaded inference is in form of single *.zip file. After extracting it, you just need to click the *.bat file therein to launch an inference app. In addition, you can also refer to the following table according to its inference execution. With the following table, we can find more experiencing manners for various inferences. The way to realize these is to follow the mentioned commands in the table and edit the extracted *.bat file from the zip file.
 
-
+|Inference Execution|-d cmd for inference device|-i cmd for inference source|
+|------ |------ |------ | 
+|classification_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to a folder with images or path to an image file. <br> Ex : File: -i image.png|
+|object_detection_demo_ssd_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to a video file (specify "cam" to work with camera). <br> Ex: <br> Webcam : -i cam 0 <br>  File: -i video.mp4|   
+|pedestrian_tracker_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|security_barrier_camera_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL| Required for video or image files input. Path to video or image files. [Note] -nc:  Required for web camera input. Maximum number of processed camera inputs (web cameras). <br> Ex: <br> Webcam  : -nc 1  <br> File:  -i video.mp4|
+|text_detection_demo.exe|Ex:<br> -d_td CPU <br> -d_td GPU <br> -d_td HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|segmentation_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|text_detection_demo.exe|Ex:<br> -d_td CPU <br> -d_td GPU <br> -d_td HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|segmentation_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|gaze_estimation_demo.exe|Ex:<br> -d_td CPU <br> -d_td GPU <br> -d_td HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|interactive_face_detection_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|mask_rcnn_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to an image(jpg/bmp/png).<br> Ex : <br> File: -i image.jpg|
+|object_detection_demo_yolov3_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 ## Object Detection Inferences
 
 Several detection models can be used to detect a set of the most popular objects - for example, faces, people, vehicles. Most of the networks are SSD-based and provide reasonable accuracy/performance trade-offs. Networks that detect the same types of objects (for example, face-detection-adas-0001 and face-detection-retail-0004) provide a choice for higher accuracy/wider applicability at the cost of slower performance, so you can expect a "bigger" network to detect objects of the same type better. In addition, some specific recognition networks/models have also been integrated into inference pipeline after a respective detector (for example, Age/Gender recognition after Face Detection).
@@ -47,7 +62,8 @@ Several detection models can be used to detect a set of the most popular objects
 | [vehicle-license-plate-detection-barrier-0106](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Object-detection/vehicle-license-plate-detection-barrier-0106.zip)|Vehicle License Plate|TensorFlow|0.634|0.349|V|V|V|
 | [yolo-v3-tf](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Object-detection/yolo-v3-tf.zip)|Object|Keras|61.922|65.984|V|V|V|
 | [yolo-v3-tiny-tf](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Object-detection/yolo-v3-tiny-tf.zip)|Object|TensorFlow|15.858|6.988|V|V|V|
- 
+|[yolov4](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Object-detection/yolov4.zip)|Object||||V|V|V|
+
 ## Classification Inferences
 
 It is a systematic grouping of observations into categories, such as when biologists categorize plants, animals, and other lifeforms into different taxonomies.
@@ -153,11 +169,23 @@ Various applications for text detection can run with additional deep Learning mo
 |[text-detection-0003](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Text-detection/text-detection-0003.zip)|Text|TensorFlow|6.747|51.256|V|V|V|
 |[text-detection-0004](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Text-detection/text-detection-0004.zip)|Text|TensorFlow|4.328|23.305|V|V|V|
  
- 
 ## INTEL OpenVINO™ Inference Engine
+OpenVINO™ toolkit is a comprehensive toolkit for quickly developing applications and solutions that solve a variety of tasks including emulation of human vision, automatic speech recognition, natural language processing, recommendation systems, and many others. Based on latest generations of artificial neural networks, including Convolutional Neural Networks (CNNs), recurrent and attention-based networks, the toolkit extends computer vision and non-vision workloads across Intel® hardware, maximizing performance. It accelerates applications with high-performance, AI and deep learning inference deployed from edge to cloud. (Reference from official Intel OpenVINO website)
+
 | Item | Version | Reference |
 |------ |------ |------ |
-|[Inference_lib](https://edgeaisuite.blob.core.windows.net/openvino2021-1/mo-lib/python_386.zip)|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html](https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html)|
+|[OV_2021.1](https://edgeaisuite.blob.core.windows.net/openvino2021-1/intel-install/w_openvino_toolkit_p_2021.1.110.exe)|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html](https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html)|
+
+
+## INTEL OpenVINO™ Model Optimizer for Conversion
+Model Optimizer process assumes you have a network model trained using a supported deep learning framework. Model Optimizer produces an Intermediate Representation (IR) of the network, which can be read, loaded, and inferred with the Inference Engine. The Inference Engine API offers a unified API across a number of supported Intel® platforms. The Intermediate Representation is a pair of files describing the model:
+.xml - Describes the network topology
+.bin - Contains the weights and biases binary data.
+<br> (Above reference from official Intel OpenVINO website)
+
+| Item | Version | Reference |
+|------ |------ |------ |
+|[Model_opt](https://edgeaisuite.blob.core.windows.net/openvino2021-1/mo-lib/python_386.zip)|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)|
 
 ## Reference Links
 
