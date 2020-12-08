@@ -1,4 +1,3 @@
-link    
 ## How the Extensions Work
 
 Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully. More precisely, all samples need to run the environment installed with Edge AI Suite V1.2.2 based on OpenVINO 2021.1.
@@ -172,6 +171,7 @@ OpenVINO™ toolkit is a comprehensive toolkit for quickly developing applicatio
 | Item | Version | Reference |
 |------ |------ |------ |
 |[OV_2021.1](https://edgeaisuite.blob.core.windows.net/openvino2021-1/intel-install/w_openvino_toolkit_p_2021.1.110.exe)|OpenVINO 2021.1|[https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html](https://docs.openvinotoolkit.org/latest/openvino_docs_IE_DG_inference_engine_intro.html)|
+ 
 [Note] The installation package is also referred to official Intel OpenVINO website and preliminarily verified by ADVANTECH.
 
 ## INTEL OpenVINO™ Model Optimizer for Conversion
