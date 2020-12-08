@@ -5,17 +5,16 @@ Here ADVANTECH provides various edge inferences in quick experiencing manners. E
 ## How to Leverage Downloaded Inferences
 Each downloaded inference is in form of single *.zip file. After extracting it, you just need to click the *.bat file therein to launch an inference app. In addition, you can also refer to the following table according to its inference execution. With the following table, we can find more experiencing manners for various inferences. The way to realize these is to follow the mentioned commands in the table and edit the extracted *.bat file from the zip file.
 
+ 
 |Inference Execution|-d cmd for inference device|-i cmd for inference source|
-|------ |------ |------ | 
+|--------- |---------------------|---------|  
 |classification_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to a folder with images or path to an image file. <br> Ex : File: -i image.png|
 |object_detection_demo_ssd_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to a video file (specify "cam" to work with camera). <br> Ex: <br> Webcam : -i cam 0 <br>  File: -i video.mp4|   
 |pedestrian_tracker_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 |security_barrier_camera_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL| Required for video or image files input. Path to video or image files. [Note] -nc:  Required for web camera input. Maximum number of processed camera inputs (web cameras). <br> Ex: <br> Webcam  : -nc 1  <br> File:  -i video.mp4|
-|text_detection_demo.exe|Ex:<br> -d_td CPU <br> -d_td GPU <br> -d_td HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
-|segmentation_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
-|text_detection_demo.exe|Ex:<br> -d_td CPU <br> -d_td GPU <br> -d_td HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
-|segmentation_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
-|gaze_estimation_demo.exe|Ex:<br> -d_td CPU <br> -d_td GPU <br> -d_td HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|text_detection_demo.exe|Ex: <br> <pre> -d_td CPU  <br> -d_td GPU <br> -d_td HDDL </pre>|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|segmentation_demo.exe|Ex:<br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|gaze_estimation_demo.exe|Ex:<br> -d CPU <br> -d GPU <br> -d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 |interactive_face_detection_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 |mask_rcnn_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to an image(jpg/bmp/png).<br> Ex : <br> File: -i image.jpg|
 |object_detection_demo_yolov3_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
