@@ -19,15 +19,15 @@ Each downloaded inference is in form of single *.zip file. After extracting it, 
 |mask_rcnn_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to an image(jpg/bmp/png).<br> Ex : <br> File: -i image.jpg|
 |object_detection_demo_yolov3_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 
-## Advantech Co., Ltd. 
+## Post-trained Object Detection Inferences from Advantech Co., Ltd.
 
-Below models can be used to detect a set of the objects . And the models are trained by Advantech.
+Here are samples provided by ADVANTECH to show the capabilities to retrain public pre-trained models for specific purposes. For example, the model of “factory-operation detect” is based on ssd_mobilenet_v2 and further becomes familiar with the target components and operations.
 
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [factory-operation detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/factory-operation%20detect.zip) | Object |TensorFlow|9.08| |V|V|V|
-| [unexpected-window detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/unexpected-window%20detect.zip) | Object |TensorFlow|24.7| |V|V|V|
+| [factory-operation detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/factory-operation%20detect.zip) | Object |TensorFlow|9.08|3.775|V|V|V|
+| [unexpected-window detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/unexpected-window%20detect.zip) | Object |TensorFlow|24.7|30.687 |V|V|V|
 
 
 ## Object Detection Inferences
