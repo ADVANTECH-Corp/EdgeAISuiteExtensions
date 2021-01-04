@@ -18,6 +18,18 @@ Each downloaded inference is in form of single *.zip file. After extracting it, 
 |interactive_face_detection_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 |mask_rcnn_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to an image(jpg/bmp/png).<br> Ex : <br> File: -i image.jpg|
 |object_detection_demo_yolov3_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+
+## Advantech Co., Ltd. 
+
+Below models can be used to detect a set of the objects . And the models are trained by Advantech.
+
+
+| Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
+|------ |------ |------ |------ |------ |------ |------ |------ |
+| [factory-operation detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/factory-operation%20detect.zip) | Object |TensorFlow|9.08| |V|V|V|
+| [unexpected-window detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/unexpected-window%20detect.zip) | Object |TensorFlow|24.7| |V|V|V|
+
+
 ## Object Detection Inferences
 
 Several detection models can be used to detect a set of the most popular objects - for example, faces, people, vehicles. Most of the networks are SSD-based and provide reasonable accuracy/performance trade-offs. Networks that detect the same types of objects (for example, face-detection-adas-0001 and face-detection-retail-0004) provide a choice for higher accuracy/wider applicability at the cost of slower performance, so you can expect a "bigger" network to detect objects of the same type better. In addition, some specific recognition networks/models have also been integrated into inference pipeline after a respective detector (for example, Age/Gender recognition after Face Detection).
