@@ -26,8 +26,8 @@ Here are samples provided by ADVANTECH to show the capabilities to retrain publi
 
 | Model Name | Major detectable features | Source Framework  | Model size(MB)  | Complexity (GFLOPs) | CPU support | GPU support  | VPU (Myriad X) support |        
 |------ |------ |------ |------ |------ |------ |------ |------ |
-| [factory-operation detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/factory-operation%20detect.zip) | Object |TensorFlow|9.08|3.775|V|V|V|
-| [unexpected-window detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/unexpected-window%20detect.zip) | Object |TensorFlow|24.7|30.687 |V|V|V|
+| [factory-operation detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/factory-operation.zip) | Object |TensorFlow|9.08|3.775|V|V|V|
+| [unexpected-window detect](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Advantech/unexpected-window.zip) | Object |TensorFlow|24.7|30.687 |V|V|V|
 
 
 ## Object Detection Inferences
