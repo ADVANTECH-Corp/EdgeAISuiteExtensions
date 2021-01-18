@@ -1,4 +1,4 @@
-## How the Extensions Work
+﻿## How the Extensions Work
 
 Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully. More precisely, all samples need to run the environment installed with Edge AI Suite V1.2.2 based on OpenVINO 2021.1.
  
@@ -10,7 +10,7 @@ Each downloaded inference is in form of single *.zip file. After extracting it, 
 |--------- |---------------------|---------|  
 |classification_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to a folder with images or path to an image file. <br> Ex : File: -i image.png|
 |object_detection_demo_ssd_async.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|Path to a video file (specify "cam" to work with camera). <br> Ex: <br> Webcam : -i cam 0 <br>  File: -i video.mp4|   
-|pedestrian_tracker_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
+|pedestrian_tracker_demo.exe|Ex: <br> -d_det CPU  <br> -d_det GPU <br>-d_det HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 |security_barrier_camera_demo.exe|Ex: <br> -d CPU  <br> -d GPU <br>-d HDDL| Required for video or image files input. Path to video or image files. [Note] -nc:  Required for web camera input. Maximum number of processed camera inputs (web cameras). <br> Ex: <br> Webcam  : -nc 1  <br> File:  -i video.mp4|
 |text_detection_demo.exe|Ex: <br> <pre> -d_td CPU  <br> -d_td GPU <br> -d_td HDDL </pre>|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
 |segmentation_demo.exe|Ex:<br> -d CPU  <br> -d GPU <br>-d HDDL|An input to process. The input must be a single image, a folder of images or anything that cv::VideoCapture can process.  <br>Ex:  <br> Webcam  : -i 0  <br> File:  -i video.mp4|
