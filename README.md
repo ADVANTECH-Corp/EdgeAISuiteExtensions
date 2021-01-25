@@ -1,4 +1,4 @@
-﻿## How the Extensions Work
+## How the Extensions Work
 
 Here ADVANTECH provides various edge inferences in quick experiencing manners. Each sample/instance is encapsulated into a single *.zip file composed of IR model, inference engine app, a sample file as inference and a batch file. Each instance is executable through clicking the batch file without any coding effort. In addition, please remember to install Edge AI Suite in advance to launch each instance successfully. More precisely, all samples need to run the environment installed with Edge AI Suite V1.2.2 based on OpenVINO 2021.1.
  
@@ -92,8 +92,8 @@ It is a systematic grouping of observations into categories, such as when biolog
 |[efficientnet-b0-pytorch](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b0-pytorch.zip)|Classification|PyTorch|10.2|0.819|V|V|V|
 |[efficientnet-b5](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b5.zip)|Classification|TensorFlow|58.3|21.252|V|V|V|
 |[efficientnet-b5-pytorch](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b5-pytorch.zip)|Classification|PyTorch|58.3|21.252|V|V|V|
-|[efficientnet-b7_auto_aug](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b7_auto_aug.zip)|Classification|TensorFlow|127|77.168|V|V|V|
-|[efficientnet-b7-pytorch](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b7-pytorch.zip)|Classification|PyTorch|127|77.168|V|V|V|
+|[efficientnet-b7_auto_aug](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b7_auto_aug.zip)|Classification|TensorFlow|127|77.168|V|V||
+|[efficientnet-b7-pytorch](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/efficientnet-b7-pytorch.zip)|Classification|PyTorch|127|77.168|V|V||
 |[googlenet-v1](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/googlenet-v1.zip)|Classification|Caffe|13.5|3.266|V|V|V|
 |[googlenet-v1-tf](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/googlenet-v1-tf.zip)|Classification|TensorFlow|12.7|3.016|V|V|V|
 |[googlenet-v2](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Classification/googlenet-v2.zip)|Classification|Caffe|21.5|4.058|V|V|V|
@@ -161,7 +161,7 @@ Instance segmentation is an extension of object detection and semantic segmentat
 |[mask_rcnn_inception_resnet_v2_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_inception_resnet_v2_atrous_coco.zip)|Segmentation|TensorFlow|124|675.314|V|V||
 |[mask_rcnn_resnet101_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_resnet101_atrous_coco.zip)|Segmentation|TensorFlow|103|674.58|V|V||
 |[mask_rcnn_inception_v2_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_inception_v2_coco.zip)|Segmentation|TensorFlow|30.5|54.926|V|V|V|
-|[mask_rcnn_resnet50_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_resnet50_atrous_coco.zip)|Segmentation|TensorFlow|67.5|294.738|V|V|V|
+|[mask_rcnn_resnet50_atrous_coco](https://edgeaisuite.blob.core.windows.net/openvino2021-1/model/Instance-segmentation/mask_rcnn_resnet50_atrous_coco.zip)|Segmentation|TensorFlow|67.5|294.738|V|V||
 
 
  
